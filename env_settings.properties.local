@@ -1,0 +1,43 @@
+[report]
+# Set 'false' the report generation if is running on CI server
+report_library_path = .resources/allure-2.13.2/bin/allure
+[report]
+# Set 'false' the report generation if is running on CI server
+report_library_path = .resources/allure-2.13.2/bin/allure
+generate_report = false
+
+[cli-args-debug]
+# To DEBUG TESTS, change to 'true' the 'development_mode' property (only in this case)
+
+development_mode = false
+debug_flag_environment =
+
+# Get more information about API Tests CLI, type in the terminal console: "python pact_runner.py --help"
+debug_flag_target = lt
+debug_flag_os = MacOS Catalina
+debug_flag_os_version =
+debug_flag_mode = api
+debug_tags =
+debug_skip_tests = no-skip
+
+[api]
+api_request_timeout = 30
+
+[browserstack]
+bs_user_key = hudsonsteffaniso2
+bs_access_key = avATqCXsNVq71ev158Lh
+bs_record_video = true
+
+[lambdatest]
+lt_email =
+lt_username = hudson.rosa
+lt_key = ppt23nDiUFiDliXISFrFhLGssZ0NbxjmnV1Szwpl3hKVnTFv6U
+lt_video = true
+lt_console = false
+# Recommended to keep 'lt_visual = false' because affects the server's performance during the execution
+lt_visual = false
+# Recommended to keep 'lt_network = false' because some external services used by the tests can have WebSocket error
+lt_network = false
+# 'lt_tunnel' Default: false - Download the LambdaTest tunnel in: https://www.lambdatest.com/support/docs/sharing-lambda-tunnel/
+lt_tunnel = false
+lt_tunnel_name = Pyon-MBP.lan
