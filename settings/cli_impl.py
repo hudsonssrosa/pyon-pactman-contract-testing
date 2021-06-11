@@ -24,8 +24,8 @@ class Cli:
         parser.add_argument(
             "--mode",
             choices=["api"],
-            help="==> Execution mode according the platform / OS (default = web)",
-            default="web",
+            help="==> Execution mode according the platform / OS (default = api)",
+            default="api",
         )
         parser.add_argument(
             "--os",
