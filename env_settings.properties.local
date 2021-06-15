@@ -1,19 +1,16 @@
 [report]
 # Set 'false' the report generation if is running on CI server
 report_library_path = .resources/allure-2.13.2/bin/allure
-[report]
-# Set 'false' the report generation if is running on CI server
-report_library_path = .resources/allure-2.13.2/bin/allure
-generate_report = false
+generate_report = true
 
 [cli-args-debug]
 # To DEBUG TESTS, change to 'true' the 'development_mode' property (only in this case)
 
 development_mode = false
-debug_flag_environment =
+debug_flag_environment = staging
 
 # Get more information about API Tests CLI, type in the terminal console: "python pact_runner.py --help"
-debug_flag_target = lt
+debug_flag_target = local
 debug_flag_os = MacOS Catalina
 debug_flag_os_version =
 debug_flag_mode = api
